@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BlockSocial Plants Calendar</title>
+    <script type="module" src="/src/main.js"></script>
+    <style>
+      :root {
+        --bg: #091310;
+        --card: rgba(17, 37, 30, 0.88);
+        --primary: #0b3d2e;
+        --accent: #6bffbc;
+        --text: #e8fff5;
+      }
+      body { margin: 0; font-family: Inter, Arial, sans-serif; background: radial-gradient(circle at top, #133428, var(--bg)); color: var(--text); }
+      .app { max-width: 1100px; margin: 0 auto; padding: 24px; }
+      .hero, .panel, .card { background: var(--card); border: 1px solid rgba(107,255,188,0.15); border-radius: 20px; box-shadow: 0 0 24px rgba(107,255,188,0.06); }
+      .hero { padding: 24px; }
+      .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; margin-top: 20px; }
+      .card { padding: 16px; position: relative; }
+      .badge { display:inline-block; padding: 4px 10px; border-radius: 999px; background: rgba(107,255,188,0.12); color: var(--accent); font-size: 12px; }
+      .wheel { position: fixed; right: 24px; bottom: 24px; width: 72px; height: 72px; border-radius: 50%; border: none; background: var(--primary); color: white; font-size: 16px; box-shadow: 0 0 20px rgba(107,255,188,0.2); }
+      .panel { margin-top: 24px; padding: 16px; }
+      .muted { color: #acd1c3; }
+      .colorbar { height: 6px; border-radius: 999px; margin-bottom: 12px; }
+    </style>
+  </head>
+  <body>
+    <div id="app"></div>
+  </body>
+</html>
